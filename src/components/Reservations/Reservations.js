@@ -6,6 +6,7 @@ import Footer from "../Footer/Footer";
 import styles from "./Reservations.module.css"
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 const reservationSchema = z.object({
     firstName: z.string().min(1, 'First name is required').max(100),
@@ -149,6 +150,7 @@ const Reservations = () => {
                 )}
             </section>
             <Footer/>
+            <ScrollToTop />
             <ToastContainer
                 position="bottom-center"
                 autoClose={2000}

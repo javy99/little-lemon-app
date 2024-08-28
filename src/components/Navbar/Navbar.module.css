@@ -47,7 +47,7 @@ header {
 .navLinks li a {
     color: #333;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
     transition: .2s ease;
     font-family: var(--font-family-markazi);
     border-bottom: 2px solid var(--bg-color);

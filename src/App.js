@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import Footer from "./components/Footer/Footer";
 import Reservations from "./components/Reservations/Reservations";
 import {Route, Routes} from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App()  {
   return (
@@ -20,6 +21,7 @@ function App()  {
                     <TestimonialsSection/>
                     <AboutSection/>
                     <Footer/>
+                    <ScrollToTop />
                 </main>
             }/>
             <Route path="/reservations" element={<Reservations />} />
