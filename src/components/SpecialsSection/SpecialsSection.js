@@ -40,7 +40,7 @@ const SpecialsSection = () => {
                 <h2 className={styles.specialsHeading}>This week's specials!</h2>
                 <Link to="/" className="btn">Online Menu</Link>
             </div>
-            <div className={styles.mealsContainer}>
+            <div className={styles.mealsContainer} data-testid="meals-container">
                 {meals.map(meal => (
                     <MealCard key={meal.id} meal={meal} />
                 ))}

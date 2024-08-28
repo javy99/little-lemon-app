@@ -137,14 +137,14 @@ const Reservations = () => {
 
 
                 {savedReservation && (
-                    <div className={styles.reservationDetails}>
+                    <div className={styles.reservationDetails} data-testid="reservation-details">
                         <h3>Reservation Details</h3>
-                        <p><strong>First Name:</strong> {savedReservation.firstName}</p>
-                        <p><strong>Last Name:</strong> {savedReservation.lastName}</p>
-                        <p><strong>Date:</strong> {savedReservation.reservationDate}</p>
-                        <p><strong>Time:</strong> {savedReservation.reservationTime}</p>
-                        <p><strong>Number of Guests:</strong> {savedReservation.numberOfGuests}</p>
-                        <p><strong>Occasion:</strong> {savedReservation.occasion}</p>
+                        <p><strong>First Name:</strong> <span data-testid="first-name">{savedReservation.firstName}</span></p>
+                        <p><strong>Last Name:</strong> <span data-testid="last-name">{savedReservation.lastName}</span></p>
+                        <p><strong>Date:</strong> <span data-testid="reservation-date">{savedReservation.reservationDate}</span></p>
+                        <p><strong>Time:</strong> <span data-testid="reservation-time">{savedReservation.reservationTime}</span></p>
+                        <p><strong>Number of Guests:</strong> <span data-testid="number-of-guests">{savedReservation.numberOfGuests}</span></p>
+                        <p><strong>Occasion:</strong> <span data-testid="occasion">{savedReservation.occasion}</span></p>
                         <button className={`btn ${styles.deleteBtn}`} onClick={handleDelete}>Delete Reservation</button>
                     </div>
                 )}

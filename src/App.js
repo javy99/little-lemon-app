@@ -1,4 +1,5 @@
 import './index.css';
+import {Route, Routes} from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import HeroSection from "./components/HeroSection/HeroSection";
 import SpecialsSection from "./components/SpecialsSection/SpecialsSection";
@@ -6,7 +7,6 @@ import TestimonialsSection from "./components/TestimonialsSection/TestimonialsSe
 import AboutSection from "./components/AboutSection/AboutSection";
 import Footer from "./components/Footer/Footer";
 import Reservations from "./components/Reservations/Reservations";
-import {Route, Routes} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App()  {

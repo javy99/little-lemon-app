@@ -3,7 +3,7 @@ import logo from "../../assets/Logo.svg"
 import {Link} from "react-router-dom";
 import { Link as ScrollLink } from 'react-scroll';
 import {useState} from "react";
-import burgerIcon from "../../assets/🦆 icon _hamburger menu.svg"
+import burgerIcon from "../../assets/icon _hamburger_menu.svg"
 
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);

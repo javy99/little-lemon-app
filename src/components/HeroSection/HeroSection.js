@@ -2,7 +2,7 @@ import styles from "./HeroSection.module.css"
 import heroImg from "../../assets/restaurant chef B.jpg"
 import {Link} from "react-router-dom";
 
-const Header = () => {
+const HeroSection = () => {
     return (
         <div className={styles.heroSection} id="home">
             <div className={`container ${styles.heroContainer}`}>
@@ -21,4 +21,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default HeroSection
