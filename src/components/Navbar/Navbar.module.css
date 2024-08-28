@@ -2,7 +2,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem !important;
     box-sizing: border-box;
 }
 
@@ -35,11 +35,11 @@ header {
     flex-direction: column;
     gap: 2rem;
     position: absolute;
-    top: 89%;
+    top: 86%;
     left: 0;
     background-color: var(--bg-color);
     width: 100%;
-    padding: 2rem;
+    padding: 2rem !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }

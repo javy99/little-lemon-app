@@ -4,6 +4,10 @@
     font-family: var(--font-family-karla);
 }
 
+.footer nav {
+    padding: 0 !important;
+}
+
 .footerContainer {
     display: flex;
     justify-content: center;
