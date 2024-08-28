@@ -15,14 +15,16 @@ function App()  {
       <Navbar />
       <Routes>
           <Route path="/" element={
-              <main>
-                  <HeroSection/>
-                  <SpecialsSection/>
-                  <TestimonialsSection/>
-                  <AboutSection/>
-                  <Footer/>
-                  <ScrollToTop />
-              </main>
+              <>
+                <main>
+                    <HeroSection/>
+                    <SpecialsSection/>
+                    <TestimonialsSection/>
+                    <AboutSection/>
+                </main>
+                <Footer/>
+                <ScrollToTop />
+              </>
           }/>
           <Route path="/reservations" element={<Reservations />} />
       </Routes>
