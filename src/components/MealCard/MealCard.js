@@ -2,7 +2,7 @@ import styles from "./MealCard.module.css"
 import { Link } from 'react-router-dom';
 import { faMotorcycle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import PropTypes from 'prop-types';
 
 const MealCard = ({meal}) => {
     return (
@@ -24,5 +24,15 @@ const MealCard = ({meal}) => {
         </div>
     )
 }
+
+MealCard.propTypes = {
+    meal: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+        price: PropTypes.number.isRequired,
+        description: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default MealCard

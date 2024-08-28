@@ -2,6 +2,7 @@ import styles from "./TestimonialCard.module.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
 import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
+import PropTypes from 'prop-types';
 
 const TestimonialCard = ({user}) => {
     const totalStars = 5;
@@ -31,5 +32,16 @@ const TestimonialCard = ({user}) => {
         </div>
     )
 }
+
+TestimonialCard.propTypes = {
+    user: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        image: PropTypes.string.isRequired,
+        review: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        nickname: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired,
+    }).isRequired,
+};
 
 export default TestimonialCard

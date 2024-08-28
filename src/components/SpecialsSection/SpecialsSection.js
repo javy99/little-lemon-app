@@ -46,7 +46,7 @@ const SpecialsSection = () => {
                 ))}
             </div>
         </section>
-    )
+    );
 }
 
 export default SpecialsSection
