@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-color: #495e57;
+  --secondary-color: #f4ce14;
+  --bg-color: #f2f2f2;
+  --card-bg-color: #edefee;
+  --card-price-color: #EE9972;
+  --card-link-color: #333333;
+  --star-color: #f4ce14;
+  --font-family-karla: 'Karla', sans-serif;
+  --font-family-roboto: 'Roboto', sans-serif;
+  --font-family-markazi: 'Markazi Text', serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-karla);
+  font-size: 1.6rem;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul, nav {
+  padding: 0 !important;
+}
+
+li {
+  list-style: none;
+}
+
+a, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 1.5rem 2rem;
+  background-color: var(--secondary-color);
+  font-size: 1.8rem !important;
+  font-family: var(--font-family-roboto);
+  color: var(--primary-color);
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: .5s;
+  font-weight: 700;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100%;
+    padding: 2rem !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 56.25%;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+
 }

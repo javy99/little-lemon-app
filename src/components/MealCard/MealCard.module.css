@@ -1,0 +1,93 @@
+.card {
+    background: var(--card-bg-color);
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex: 1 1 30%;
+    max-width: 33.333%;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.card:hover .cardImg {
+    transform: scale(1.1);
+}
+
+.cardImg {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem 2rem 0 0;
+    transition: transform .5s ease;
+}
+
+.cardBody {
+    padding: 2rem;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.cardHeader {
+    font-family: var(--font-family-markazi);
+    font-size: 2.4rem;
+}
+
+.cardPrice {
+    font-family: var(--font-family-karla);
+    font-size: 1.6rem;
+    color: var(--card-price-color);
+    font-weight: 700;
+}
+
+.cardText {
+    font-family: var(--font-family-karla);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    height: 10rem;
+}
+
+.cardLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--card-link-color);
+    font-family: var(--font-family-karla);
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.cardLink:hover {
+    color: var(--secondary-color);
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 45%;
+        max-width: 50%;
+    }
+
+    .cardText {
+        height: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .cardText {
+        height: 4rem;
+    }
+}

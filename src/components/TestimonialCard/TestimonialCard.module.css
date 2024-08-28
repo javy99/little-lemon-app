@@ -1,0 +1,80 @@
+.card {
+    background-color: white;
+    border-radius: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 2rem;
+    flex: 1 1 20%;
+    margin: .5rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cardImg {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+}
+
+.starContainer {
+    display: flex;
+    gap: .2rem;
+    margin-bottom: 2rem;
+}
+
+.starFilled {
+    color: var(--star-color);
+}
+
+.starEmpty {
+    color: grey;
+}
+
+.cardDescription {
+    color: #333;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex: 1 1 45%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 2.5rem;
+    }
+
+    .cardImg {
+        width: 30%;
+    }
+
+    .cardHeader {
+        margin-bottom: 0;
+    }
+}

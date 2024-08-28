@@ -1,0 +1,126 @@
+.aboutSection {
+    padding: 6rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutSectionLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 0 0 60%;
+    font-family: var(--font-family-markazi);
+}
+
+.aboutSectionLeft h2 {
+    color: var(--primary-color);
+    font-size: 6rem;
+    line-height: 3rem;
+}
+
+.aboutSectionLeft p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    font-family: var(--font-family-karla);
+    color: #333;
+    margin-top: 2rem;
+}
+
+.aboutSectionLeft span {
+    font-size: 4rem;
+    color: #ee9972;
+}
+
+.aboutSectionRight {
+    display: flex;
+    flex: 0 0 35%;
+    position: relative;
+    height: 250px;
+    justify-content: center;
+}
+
+.aboutSectionRight img {
+    width: 100%;
+    position: absolute;
+    top: -40%;
+    border-radius: 1.5rem;
+    transition: transform 0.6s ease, z-index 0.3s ease;
+}
+
+.aboutSectionRight img:first-child {
+    left: 0;
+    z-index: 1;
+}
+
+.aboutSectionRight img:last-child {
+    top: 25%;
+    left: 50%;
+    z-index: 2;
+}
+
+.aboutSectionRight img:first-child:hover {
+    transform: scale(1.15) rotate(5deg);
+    z-index: 10;
+}
+
+.aboutSectionRight img:last-child:hover {
+    transform: scale(1.15) rotate(-5deg);
+    z-index: 10;
+}
+
+@media (min-width: 480px) and (max-width: 1720px ) {
+    .aboutSection {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .aboutSectionLeft {
+        flex: 0 0 100%;
+        margin-top: 3rem;
+    }
+
+    .aboutSectionRight {
+        position: static;
+        gap: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+    }
+
+    .aboutSectionRight img {
+        position: static;
+        width: 40%;
+    }
+
+    .aboutSectionRight img:first-child:hover {
+        transform: scale(1.1);
+    }
+
+    .aboutSectionRight img:last-child:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutSectionLeft {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutSection {
+        padding: 4rem 0;
+    }
+
+    .aboutSectionRight {
+        display: none;
+    }
+
+    .aboutSectionLeft {
+        flex: 0 0 100%;
+    }
+
+}

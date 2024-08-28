@@ -1,0 +1,119 @@
+.heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding-top: 14rem;
+    font-family: var(--font-family-markazi);
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroSectionLeft {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.heroSectionLeft h1 {
+    color: var(--secondary-color);
+    font-size: 6rem;
+    line-height: 3rem;
+}
+
+.heroSectionLeft p {
+    font-size: 2rem;
+    font-family: var(--font-family-karla);
+    color: #f4f4f4;
+    width: 50%;
+    line-height: 2.6rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.heroSectionLeft span {
+    font-size: 4rem;
+}
+
+.heroSectionRight {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.heroSectionRight img {
+    max-width: 80%;
+    border-radius: 2rem;
+}
+
+
+@media (max-width: 1024px) {
+    .heroSection {
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+    }
+
+    .heroSectionLeft {
+        margin-right: 1rem;
+    }
+
+    .heroSectionLeft h1 {
+        font-size: 5rem;
+    }
+
+    .heroSectionLeft p {
+        font-size: 1.8rem;
+        width: 100%;
+    }
+
+    .heroSectionLeft span {
+        font-size: 3.5rem;
+    }
+
+    .heroSectionRight img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        flex-direction: column;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+
+    .heroContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heroSectionLeft {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .heroSectionLeft h1 {
+        font-size: 4rem;
+    }
+
+    .heroSectionLeft p {
+        font-size: 1.6rem;
+    }
+
+    .heroSectionLeft span {
+        font-size: 3rem;
+    }
+
+    .heroSectionRight {
+        justify-content: center;
+    }
+
+    .heroSectionRight img {
+        max-width: 50%;
+    }
+}
