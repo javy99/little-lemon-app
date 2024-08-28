@@ -15,7 +15,7 @@
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.9.0",
     "react-toastify": "^10.0.5",
-    "web-vitals": "^2.1.4",
+    "web-vitals": "^4.2.3",
     "webpack": "^5.94.0",
     "zod": "^3.23.8"
   },
@@ -44,12 +44,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
     "@babel/eslint-parser": "^7.25.1",
+    "@babel/preset-flow": "^7.24.7",
     "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-styled-components": "^2.1.4",
     "eslint-plugin-react": "^7.35.0",
-    "jest": "^27.5.1"
+    "jest": "^29.7.0"
   }
 }
