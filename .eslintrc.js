@@ -10,6 +10,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended',
         'plugin:react/jsx-runtime',
+        'plugin:jest/recommended'
     ],
     settings: {
         react: {
@@ -19,6 +20,7 @@ module.exports = {
     env: {
         browser: true,
         node: true,
+        jest: true
     },
     rules: {
         'react/no-unescaped-entities': 'off',

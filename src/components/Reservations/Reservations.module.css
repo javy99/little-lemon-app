@@ -14,120 +14,14 @@
     font-weight: 400;
 }
 
-.reservationsForm, .reservationDetails {
-    border: 1px solid var(--primary-color);
+
+.reservationDetails {
+    border: 2px dashed var(--primary-color);
     box-shadow: 4px 5px 6px rgba(0, 0, 0, .25);
     border-radius: 2rem;
     padding: 4rem;
-}
-
-.formGroupInline {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.formGroup {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-}
-
-.formGroup input,
-.formGroup select {
-    background-color: #edefee;
-    border: 2px solid rgba(73, 94, 87, .5);
-    border-radius: 6px;
-    color: var(--primary-color);
-    min-height: 48px;
-    transition: .32s ease;
-    padding: 0 2rem;
-    font-size: 1.6rem;
-}
-
-.formGroup input[type=number]::-webkit-inner-spin-button,
-.formGroup input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-.formGroup input[type=number] {
-    -moz-appearance: textfield;
-}
-
-.formGroup input:focus,
-.formGroup select:focus{
-    border: 2px solid var(--primary-color);
-    outline: none;
-}
-
-.formGroup select {
-    cursor: pointer;
-}
-
-.formGroup label {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: .5rem;
-    position: relative;
-}
-
-
-.formGroup label::after {
-    content: '*';
-    color: red;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: .5rem;
-}
-
-
-.selectContainer {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.selectContainer select {
-    width: 100%;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.selectContainer::after {
-    content: '▼';
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    position: absolute;
-    right: 2rem;
-    top: 60%;
-}
-
-.formBtn {
-    margin-top: 1rem;
-    width: 100%;
-}
-
-.errorBorder {
-    border-color: red !important;
-}
-
-.errorMessage {
-    color: red;
-    font-size: 2rem;
-    margin-top: 0.5rem;
-}
-
-
-.reservationDetails {
     margin-top: 5rem;
-    border-width: 2px;
-    border-style: dashed;
     text-align: center;
-    padding: 4rem;
 }
 
 .reservationDetails h3 {
@@ -161,30 +55,9 @@
 }
 
 @media (max-width: 768px) {
-    .reservationsForm, .reservationDetails {
+    .reservationDetails {
         padding: 3rem;
         border-radius: 1rem;
-    }
-
-    .formGroupInline {
-        flex-direction: column;
-    }
-
-    .formGroup {
-        margin-bottom: 1.5rem;
-    }
-
-    .formGroup label {
-        font-size: 2rem;
-    }
-
-    .formGroup input,
-    .formGroup select {
-        font-size: 1.4rem;
-    }
-
-    .formBtn {
-        font-size: 1.4rem;
     }
 
     .reservationDetails h3 {
@@ -194,37 +67,12 @@
     .reservationDetails p {
         font-size: 2rem;
     }
-
-    .selectContainer::after {
-        font-size: 1.2rem;
-    }
 }
 
 @media (max-width: 480px) {
-    .reservationsForm, .reservationDetails {
+    .reservationDetails {
         padding: 2rem;
         border-radius: 0.5rem;
-    }
-
-    .formGroupInline {
-        flex-direction: column;
-    }
-
-    .formGroup {
-        margin-bottom: 1rem;
-    }
-
-    .formGroup label {
-        font-size: 1.5rem;
-    }
-
-    .formGroup input,
-    .formGroup select {
-        font-size: 1.2rem;
-    }
-
-    .formBtn {
-        font-size: 1.2rem;
     }
 
     .reservationDetails h3 {
@@ -233,10 +81,6 @@
 
     .reservationDetails p {
         font-size: 1.6rem;
-    }
-
-    .selectContainer::after {
-        font-size: 1rem;
     }
 }
 

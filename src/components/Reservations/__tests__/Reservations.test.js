@@ -4,7 +4,6 @@ import Reservations from '../Reservations';
 import { MemoryRouter } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
-// Mock the react-toastify functions
 jest.mock('react-toastify', () => ({
     toast: {
         success: jest.fn(),
@@ -23,7 +22,7 @@ describe('Reservations Component', () => {
         return render(<MemoryRouter>{ui}</MemoryRouter>);
     };
 
-    test('should render form fields and labels', () => {
+    test('should render form fields and labels from BookingForm', () => {
         renderWithRouter(<Reservations />);
 
         expect(screen.getByLabelText(/First Name/i)).toBeInTheDocument();
@@ -34,7 +33,7 @@ describe('Reservations Component', () => {
         expect(screen.getByLabelText(/Occasion/i)).toBeInTheDocument();
     });
 
-    test('should successfully submit the form and save reservation', async () => {
+    test('should successfully submit the form in BookingForm and save reservation', async () => {
         renderWithRouter(<Reservations />);
 
         fireEvent.change(screen.getByLabelText(/First Name/i), { target: { value: 'Javlonbek' } });
@@ -74,7 +73,6 @@ describe('Reservations Component', () => {
         expect(await screen.findByTestId('number-of-guests')).toHaveTextContent('11');
         expect(await screen.findByTestId('occasion')).toHaveTextContent('birthday');
     });
-
 
     test('should delete reservation and show toast', async () => {
         localStorage.setItem('reservation', JSON.stringify({
