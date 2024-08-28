@@ -4,12 +4,11 @@ Welcome to the Little Lemon Restaurant website repository. This project was crea
 
 ## Live Preview
 
-Check out the live version of the website! [View Live Demo](https://littlelemon.leanczo.vercel.app/)
+Check out the live version of the website! [View Live Demo](https://javy-littlelemon.vercel.app/)
 
 ## Features
 
 - Smooth navigation through the pages.
-- Explore the restaurant's menu in style.
 - Make a reservation using an interactive form.
 - Receive a reservation confirmation through a popup.
 - Built with React for a modern and interactive user experience.
