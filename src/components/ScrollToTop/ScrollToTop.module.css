@@ -22,8 +22,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-
-
 @media (max-width: 1200px) {
     .scrollToTopBtn {
         width: 4.5rem;

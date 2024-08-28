@@ -13,19 +13,19 @@ function App()  {
   return (
     <>
       <Navbar />
-        <Routes>
-            <Route path="/" element={
-                <main>
-                    <HeroSection/>
-                    <SpecialsSection/>
-                    <TestimonialsSection/>
-                    <AboutSection/>
-                    <Footer/>
-                    <ScrollToTop />
-                </main>
-            }/>
-            <Route path="/reservations" element={<Reservations />} />
-        </Routes>
+      <Routes>
+          <Route path="/" element={
+              <main>
+                  <HeroSection/>
+                  <SpecialsSection/>
+                  <TestimonialsSection/>
+                  <AboutSection/>
+                  <Footer/>
+                  <ScrollToTop />
+              </main>
+          }/>
+          <Route path="/reservations" element={<Reservations />} />
+      </Routes>
     </>
   );
 }

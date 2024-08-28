@@ -1,5 +1,6 @@
 import styles from "./HeroSection.module.css"
 import heroImg from "../../assets/restaurant chef B.jpg"
+import {Link} from "react-router-dom";
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
                     <span>Chicago</span>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a
                         modern twist.</p>
-                    <button className="btn">Reserve a table</button>
+                    <Link to="/reservations" className="btn">Reserve a table</Link>
                 </div>
                 <div className={styles.heroSectionRight}>
                     <img src={heroImg} alt="heroImg"/>

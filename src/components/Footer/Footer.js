@@ -18,16 +18,16 @@ const Footer = () => {
                         <li><ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink></li>
                         <li><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink></li>
                         <li><ScrollLink to="menu" smooth={true} duration={500}>Menu</ScrollLink></li>
-                        <li><ScrollLink to="reservations" smooth={true} duration={500}>Reservations</ScrollLink></li>
-                        <li><ScrollLink to="order-online" smooth={true} duration={500}>Order Online</ScrollLink></li>
-                        <li><ScrollLink to="login" smooth={true} duration={500}>Login</ScrollLink></li>
+                        <li><Link to="/reservations">Reservations</Link></li>
+                        <li><Link to="/">Order Online</Link></li>
+                        <li><Link to="/">Login</Link></li>
                     </ul>
                 </nav>
                 <div>
                     <h4>Contact us</h4>
                     <ul className={styles.navLinks}>
                         <li>
-                            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon}/> 678 Pisa Ave, Chicago, IL
+                        <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon}/> 678 Pisa Ave, Chicago, IL
                             60611
                         </li>
                         <li>

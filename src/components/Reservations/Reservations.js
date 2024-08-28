@@ -42,7 +42,7 @@ const Reservations = () => {
     return (
         <>
             <Navbar />
-            <section className={`container ${styles.reservationsSection}`}>
+            <section className={`container ${styles.reservationsSection}`} id="home">
                 <h2>Table Reservation</h2>
                 <form className={styles.reservationsForm} onSubmit={handleSubmit(onSubmit)}>
                     <div className={styles.formGroupInline}>

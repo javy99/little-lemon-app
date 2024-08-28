@@ -3,6 +3,7 @@ import bruschettaImage from '../../assets/bruchetta.svg';
 import greekSaladImage from '../../assets/greek salad.jpg';
 import lemonDessertImage from '../../assets/lemon dessert.jpg';
 import MealCard from "../MealCard/MealCard";
+import {Link} from "react-router-dom";
 
 const meals = [
     {
@@ -37,7 +38,7 @@ const SpecialsSection = () => {
         <section className={`container ${styles.specialsSection}`} id="menu">
             <div className={styles.specialsHeader}>
                 <h2 className={styles.specialsHeading}>This week's specials!</h2>
-                <button className="btn">Online Menu</button>
+                <Link to="/" className="btn">Online Menu</Link>
             </div>
             <div className={styles.mealsContainer}>
                 {meals.map(meal => (
